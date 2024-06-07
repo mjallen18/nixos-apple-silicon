@@ -18,10 +18,10 @@
   src = fetchFromGitLab {
     # tracking: https://pagure.io/fedora-asahi/mesa/commits/asahi
     domain = "gitlab.freedesktop.org";
-    owner = "asahi";
+    owner = "alyssa";
     repo = "mesa";
-    rev = "asahi-20240228";
-    hash = "sha256-wOFJyYfoN6yxE9HaHXLP/0MhjyRvmlb+jPPUke0sbbE=";
+    rev = "honeykrisp-20240506-2";
+    hash = "sha256-uhVlPZPNRskjhn1U4k5vqUKEtC08mXmX+lVonpY/PEM=";
   };
 
   mesonFlags =
@@ -34,6 +34,7 @@
       "-Dgallium-xa=disabled"
       # does not make any sense
       "-Dandroid-libbacktrace=disabled"
+      "-Dintel-rt=disabled"
       # do not want to add the dependencies
       "-Dlibunwind=disabled"
       "-Dlmsensors=disabled"
