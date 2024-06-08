@@ -18,10 +18,10 @@
   src = fetchFromGitLab {
     # tracking: https://pagure.io/fedora-asahi/mesa/commits/asahi
     domain = "gitlab.freedesktop.org";
-    owner = "alyssa";
+    owner = "asahi";
     repo = "mesa";
-    rev = "honeykrisp-20240506-2";
-    hash = "sha256-uhVlPZPNRskjhn1U4k5vqUKEtC08mXmX+lVonpY/PEM=";
+    rev = "asahi-20240527";
+    hash = "sha256-urq1GQ6fad1NG3Y+7biiHZy3NnnGWOlQWLpEh8uKYqY=";
   };
 
   mesonFlags =
