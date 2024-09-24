@@ -86,7 +86,7 @@ let
     (linuxKernel.manualConfig rec {
       inherit stdenv lib;
 
-      version = "6.11-asahi";
+      version = "6.11-1-asahi";
       modDirVersion = version;
       extraMeta.branch = "6.11";
 
@@ -95,7 +95,7 @@ let
         owner = "AsahiLinux";
         repo = "linux";
         rev = "asahi-6.11-1";
-        hash = "sha256-WSccBkll8lC0bwRzyN2ykVWvuZu0cI/gXzpaGgQQZXU=";
+        hash = "sha256-WSccBkll8lC0bwRzyN2ykVWvuZu0cI/gXzpaGgQZXU=";
       };
 
       kernelPatches = [
